@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Result</title>
+    <link rel="stylesheet" href="static/result_styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Classification Result</h1>
+        
+        <div class="result">
+            <p><strong>Prediction:</strong> {{ prediction }}</p>
+            <p><strong>Probabilities:</strong> {{ probabilities }}</p>
+        </div>
+        
+        <div class="image-section">
+            <img src="{{ image }}" alt="Uploaded Image">
+        </div>
+        
+        <a href="/" class="back-button">Classify Another Image</a>
+    </div>
+
+    <!-- Additional Features -->
+    <footer>
+        <p>&copy; 2024 Plant Disease Classifier. All rights reserved.</p>
+        <p>Contact: <a href="mailto:support@plantclassifier.com">support@plantclassifier.com</a></p>
+    </footer>
+</body>
+</html>
